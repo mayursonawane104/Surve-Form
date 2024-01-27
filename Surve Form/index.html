@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Survey Form</title>
+</head>
+<body>
+  <h1 id="title">Survey Form</h1>
+  <p id="description">Enter your information to Addmission for MCA</p>
+
+  <form id="survey-form" action="#" method="post">
+    <label for="name" id="name-label">Name:</label>
+    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+    <label for="email" id="email-label">Email:</label>
+    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+    <label for="number" id="number-label">Age:</label>
+    <input type="number" id="number" name="number" placeholder="Enter a number" min="1" max="100" required>
+
+    <label for="dropdown">Select an Class:</label>
+    <select id="dropdown" name="dropdown">
+      <option value="option1">MCA 1</option>
+      <option value="option2">MCA 2</option>
+    </select>
+
+    <fieldset>
+      <legend>Choose an Division:</legend>
+       <input type="radio" id="radio1" name="radioGroup" value="radio1"></input>
+       <label for="radio1"> Div- A </label>
+   
+      <input type="radio" id="radio2" name="radioGroup" value="radio2"/>
+      <label for="radio2">Div- B</label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Select multiple Subject:</legend>
+      <input type="checkbox" id="checkbox1" name="checkboxGroup" value="checkbox1">
+      <label for="checkbox1">DBMS</label>
+      <input type="checkbox" id="checkbox2" name="checkboxGroup" value="checkbox2">
+      <label for="checkbox2">Operating System</label>
+            <input type="checkbox" id="checkbox3" name="checkboxGroup" value="checkbox3">
+      <label for="checkbox3">AI</label>
+       <input type="checkbox" id="checkbox4" name="checkboxGroup" value="checkbox4">
+      <label for="checkbox4">Web Programming</label>
+       <input type="checkbox" id="checkbox5" name="checkboxGroup" value="checkbox5">
+      <label for="checkbox5">Core Java</label>
+ 
+      
+    </fieldset>
+
+    <label for="comments">Your Address:</label>
+    <textarea id="comments" name="comments" placeholder="Enter your address"></textarea>
+
+    <button type="submit" id="submit">Submit</button>
+  </form>
+</body>
+</html>

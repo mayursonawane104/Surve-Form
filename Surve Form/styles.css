@@ -1,0 +1,129 @@
+body {
+    font-family: 'Arial', sans-serif;
+     background-color: #1b1b32;;
+    margin: 10px;
+    padding: 0;
+  }
+  
+  #title {
+    text-align: center;
+    color: #fff;
+  }
+  
+  #description {
+    text-align: center;
+    color: #fff;
+  }
+  
+  #survey-form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #9932CC;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 8px;
+    color: #fff;
+    font-weight:bold;
+  }
+  
+  input,
+  select,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  
+  input[type="radio"] {
+    display: none; 
+  }
+  
+  label[for^="radio"] {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+    cursor: pointer;
+  }
+  
+  label[for^="radio"]::before {
+    content: '';
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    margin-right: 5px;
+    background-color: #fff;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+  }
+  
+  input[type="radio"]:checked + label::before {
+    background-color: #007bff;
+    border-color: #007bff;
+  }
+  
+  
+  input[type="checkbox"] {
+    display: none; 
+    
+  }
+  
+  label[for^="checkbox"] {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+        cursor: pointer;
+  
+  }
+  
+  label[for^="checkbox"]::before {
+    content: '';
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border: 2px solid #fff;
+    border-radius: 4px;
+    margin-right: 5px;
+    background-color: #fff;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+  }
+  
+  input[type="checkbox"]:checked + label::before {
+    background-color: #007bff;
+    border-color: #007bff;
+        cursor: default;
+  
+  }
+  
+  fieldset {
+    margin-bottom: 16px;
+    padding: 10px;
+    border: 1px solid #fff;
+    border-radius: 4px;
+  }
+  
+  legend {
+    font-weight: bold;
+    color:#fff;
+  }
+  
